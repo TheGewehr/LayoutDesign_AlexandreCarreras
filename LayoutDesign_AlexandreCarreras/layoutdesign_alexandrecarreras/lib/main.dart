@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: const Color.fromARGB(255, 5, 5, 5),
         appBar: AppBar                                            // Appbar Stuff
         (
-          backgroundColor: Color.fromARGB(255, 49, 49, 49),
+          backgroundColor: const Color.fromARGB(255, 49, 49, 49),
           actions: <Widget> 
           [
             IconButton(
@@ -40,13 +40,22 @@ class MyApp extends StatelessWidget {
             icon: const Icon(Icons.west,color: Colors.purple,)
           ),
         ),
-        bottomNavigationBar: BottomBar(),
+        bottomNavigationBar: const BottomBar(),
         body:  Stack(
           children: [
-          
-          Align(alignment: Alignment.topCenter, child: ProductImage(),),
+          Align(
+            alignment: Alignment.topCenter,
+            child: Column(
+              children: const [
+                Expanded(flex: 5, child: ProductImage()),
+                Expanded(flex: 6, child: InfoSection()),
+              ],
+            ),
+          ),
+          //const Align(alignment: Alignment.topCenter, child: ProductImage(),),
           Align(alignment: Alignment.centerRight, child: LikeWidget(),),
-          Align(alignment: Alignment.topRight, child: CountOfPictures(),),
+          const Align(alignment: Alignment.topRight, child: CountOfPictures(),),
+          
           
           ]
         )
@@ -159,10 +168,7 @@ class AddToTheCart extends StatelessWidget{
 }
 
 class ProductImage extends StatelessWidget{
-  const ProductImage({Key? key}) : super(key: key);
-
-  
- 
+  const ProductImage({Key? key}) : super(key: key); 
 
   @override
   Widget build(BuildContext)
@@ -175,9 +181,70 @@ class ProductImage extends StatelessWidget{
        
         ),
       
-      child: Image.asset('assets/AdrianHelmet01.png', fit: BoxFit.cover)
+      child: Image.asset('assets/AdrianHelmet01.png', fit: BoxFit.cover),
+      
     );
     
+  }
+}
+
+class InfoSection extends StatelessWidget {
+  const InfoSection({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    //final product = context.watch<Product>();
+    return Padding(
+      padding: const EdgeInsets.only(left: 15, right:100, top: 15),
+      child: Column(
+        children: const [
+          //Row(
+          //  children: [
+            
+            Text(
+                  "Admits Offers",
+                  style: TextStyle(
+                  fontSize: 13,
+                  fontWeight: FontWeight.bold,
+                  color: Color.fromARGB(255, 45, 255, 108),
+                  
+                ),
+              ),
+            
+
+              Text(
+                  "Adrian 1915 helmet with Polack system visor",
+                  style: TextStyle(
+                  fontSize: 15,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white
+                ),
+              ),
+              //const Spacer(),
+              //FloatingActionButton(
+              //  onPressed: null,
+               // mini: true,
+              // backgroundColor: Colors.amber,
+                //child: //Icon(
+                  //product.favorite ? Icons.favorite : Icons.favorite_outline,
+                //),
+              //)
+          //  ],
+          //),
+          Text(
+            "French helmet from the first world war. It is an extremely rare piece that was created to provide french soldiers more protection during ennemy assaults.",
+            style: TextStyle(
+              color: Colors.grey,
+              height: 1.0,
+            ),
+          ),
+          //const SizedBox(height: 20),
+          
+        ],
+      ),
+    );
   }
 }
 
@@ -313,4 +380,5 @@ class SemaphoreLight extends StatelessWidget{
   }
 
 }*/
+
 
