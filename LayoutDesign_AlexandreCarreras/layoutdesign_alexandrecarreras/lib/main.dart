@@ -43,9 +43,10 @@ class MyApp extends StatelessWidget {
         bottomNavigationBar: BottomBar(),
         body:  Stack(
           children: [
+          
+          Align(alignment: Alignment.topCenter, child: ProductImage(),),
           Align(alignment: Alignment.centerRight, child: LikeWidget(),),
           Align(alignment: Alignment.topRight, child: CountOfPictures(),),
-          //Align(alignment: Alignment.bottomCenter, child: AddToTheCart(),),
           
           ]
         )
@@ -152,6 +153,29 @@ class AddToTheCart extends StatelessWidget{
         ),
       padding: const EdgeInsets.all(padding),
       child: Center(child: Text("Add to the Cart", style: const TextStyle( fontSize: 18, fontWeight: FontWeight.bold,color: Color.fromARGB(255, 255, 255, 255))))
+    );
+    
+  }
+}
+
+class ProductImage extends StatelessWidget{
+  const ProductImage({Key? key}) : super(key: key);
+
+  
+ 
+
+  @override
+  Widget build(BuildContext)
+  {
+    return Container(
+      
+      height: 300, 
+      decoration: const BoxDecoration(
+        color: Color.fromARGB(255, 201, 72, 184),
+       
+        ),
+      
+      child: Image.asset('assets/AdrianHelmet01.png', fit: BoxFit.cover)
     );
     
   }
