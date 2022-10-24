@@ -18,7 +18,6 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    const separator = SizedBox(height: 10);
     return MaterialApp(
         home: Scaffold(
             backgroundColor: const Color.fromARGB(255, 5, 5, 5),
