@@ -9,13 +9,14 @@ class InfoSection extends StatelessWidget {
   Widget build(BuildContext context) {
     //final product = context.watch<Product>();
     return Padding(
-      padding: const EdgeInsets.only(left: 15, right: 100, top: 15),
+      padding:
+          const EdgeInsets.only(left: 15, right: 10, top: 15), // right: 100
       child: Column(
         children: const [
           //Row(
           //  children: [
-
           Text(
+            textAlign: TextAlign.left,
             "Admits Offers",
             style: TextStyle(
               fontSize: 13,
