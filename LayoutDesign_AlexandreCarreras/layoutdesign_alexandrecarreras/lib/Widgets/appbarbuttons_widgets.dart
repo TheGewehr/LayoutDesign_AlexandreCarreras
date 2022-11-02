@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class SearchButton extends StatelessWidget {
@@ -7,11 +6,11 @@ class SearchButton extends StatelessWidget {
   static const double padding = 6;
 
   @override
-  Widget build(BuildContext) {
+  Widget build(context) {
     return const Icon(
-                Icons.search,
-                color: Colors.purple,
-              );
+      Icons.search,
+      color: Colors.purple,
+    );
   }
 }
 
@@ -21,11 +20,11 @@ class ShoppingCartButton extends StatelessWidget {
   static const double padding = 6;
 
   @override
-  Widget build(BuildContext) {
+  Widget build(context) {
     return const Icon(
-                Icons.shopping_cart_outlined,
-                color: Colors.purple,
-              );
+      Icons.shopping_cart_outlined,
+      color: Colors.purple,
+    );
   }
 }
 
@@ -35,11 +34,11 @@ class MoreVerticalButton extends StatelessWidget {
   static const double padding = 6;
 
   @override
-  Widget build(BuildContext) {
+  Widget build(context) {
     return const Icon(
-                Icons.more_vert,
-                color: Colors.purple,
-              );
+      Icons.more_vert,
+      color: Colors.purple,
+    );
   }
 }
 
@@ -49,10 +48,10 @@ class WestArrowButton extends StatelessWidget {
   static const double padding = 6;
 
   @override
-  Widget build(BuildContext) {
+  Widget build(context) {
     return const Icon(
-              Icons.west,
-              color: Colors.purple,
-            );
+      Icons.west,
+      color: Colors.purple,
+    );
   }
 }

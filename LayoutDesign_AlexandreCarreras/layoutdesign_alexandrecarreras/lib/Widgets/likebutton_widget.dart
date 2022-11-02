@@ -15,7 +15,7 @@ class _LikeWidgetState extends State<LikeWidget> {
     return Container(
       width: 60,
       decoration: const BoxDecoration(
-        color: Color.fromARGB(255, 44, 44, 44),
+        color: Color.fromARGB(255, 61, 61, 61),
         borderRadius: BorderRadius.all(Radius.circular(20)),
       ),
       padding: const EdgeInsets.all(4),
@@ -27,8 +27,7 @@ class _LikeWidgetState extends State<LikeWidget> {
         },
         icon: Icon(
           isLiked ? Icons.favorite : Icons.favorite_outline,
-          //isLiked ?  : Color.fromARGB(255, 71, 71, 71),
-          color: Color.fromARGB(255, 180, 180, 180),
+          color:  const Color.fromARGB(255, 255, 254, 254),
           size: 29,
         ),
       ),
