@@ -3,9 +3,8 @@
 import 'package:flutter/material.dart';
 
 import 'Widgets/bottombar_widget.dart';
-import 'Widgets/infosection_widget.dart';
+import 'Widgets/productsection_widget.dart';
 
-import 'Widgets/productimage_widgets.dart';
 
 void main() {
   runApp(const MyApp());
@@ -59,18 +58,9 @@ class MyApp extends StatelessWidget {
           alignment: Alignment.topCenter,
           child: ListView(
             children: [
-              ProductImage(),
+              
+              ProductSection()
 
-              InfoSection(),
-              InfoSection(),
-              InfoSection(),
-              InfoSection(),
-              InfoSection(),
-              InfoSection(),
-              InfoSection(),
-              InfoSection(),
-              InfoSection(),
-              InfoSection(),
             ],
           ),
         ),

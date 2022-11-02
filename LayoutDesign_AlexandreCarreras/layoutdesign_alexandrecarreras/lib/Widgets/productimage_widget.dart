@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
-import 'likebutton_widget.dart';
+//import 'likebutton_widget.dart';
 import 'countofpictures_widget.dart';
-import 'infosection_widget.dart';
+//import 'infosection_widget.dart';
 
 class ProductImage extends StatelessWidget {
   const ProductImage({Key? key}) : super(key: key);
@@ -22,11 +22,11 @@ class ProductImage extends StatelessWidget {
             width: 500,
             height: 500,
           ), //
-          Padding(
+          //Padding(
             //alignment: Alignment.bottomRight,
-            padding: const EdgeInsets.fromLTRB(330, 273, 0, 0),
-            child: LikeWidget(),
-          ),
+         //   padding: const EdgeInsets.fromLTRB(330, 273, 0, 0),
+         //   child: LikeWidget(),
+          //),
 
           const Padding(
             //alignment: Alignment.bottomRight,

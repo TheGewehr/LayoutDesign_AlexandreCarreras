@@ -28,8 +28,8 @@ class _LikeWidgetState extends State<LikeWidget> {
         icon: Icon(
           isLiked ? Icons.favorite : Icons.favorite_outline,
           //isLiked ?  : Color.fromARGB(255, 71, 71, 71),
-          color: const Color.fromARGB(255, 255, 71, 71),
-          size: 31,
+          color: Color.fromARGB(255, 180, 180, 180),
+          size: 29,
         ),
       ),
     );
