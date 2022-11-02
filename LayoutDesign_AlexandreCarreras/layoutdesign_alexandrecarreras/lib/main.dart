@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 
 import 'Widgets/bottombar_widget.dart';
 import 'Widgets/productsection_widget.dart';
+import 'Widgets/appbarbuttons_widgets.dart';
 
 
 void main() {
@@ -23,35 +24,16 @@ class MyApp extends StatelessWidget {
             (
           backgroundColor: const Color.fromARGB(255, 49, 49, 49),
           actions: <Widget>[
-            IconButton(
-              onPressed: () {},
-              icon: const Icon(
-                Icons.search,
-                color: Colors.purple,
-              ),
-            ),
-            IconButton(
-              onPressed: () {},
-              icon: const Icon(
-                Icons.shopping_cart_outlined,
-                color: Colors.purple,
-              ),
-            ),
-            IconButton(
-              onPressed: () {},
-              icon: const Icon(
-                Icons.more_vert,
-                color: Colors.purple,
-              ),
-            )
+            Row(children: [
+              const SearchButton(),  
+              SizedBox(width:20),           
+              const ShoppingCartButton(),
+              SizedBox(width:20),
+              const MoreVerticalButton()
+            ],)
+                        
           ],
-          leading: IconButton(
-            onPressed: () {},
-            icon: const Icon(
-              Icons.west,
-              color: Colors.purple,
-            ),
-          ),
+          leading: WestArrowButton(),
         ),
         bottomNavigationBar: const BottomBar(),
         body: Align(
