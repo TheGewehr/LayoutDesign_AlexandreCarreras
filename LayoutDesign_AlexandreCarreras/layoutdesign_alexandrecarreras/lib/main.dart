@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'Widgets/bottombar_widget.dart';
 import 'Widgets/productsection_widget.dart';
 import 'Widgets/appbarbuttons_widgets.dart';
+import 'Widgets/moredetails_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: const Color.fromARGB(255, 5, 5, 5),
+        backgroundColor: const Color.fromARGB(255, 74, 74, 74),
         appBar: AppBar // Appbar Stuff
             (
           backgroundColor: const Color.fromARGB(255, 49, 49, 49),
@@ -41,7 +42,11 @@ class MyApp extends StatelessWidget {
           alignment: Alignment.topCenter,
           child: ListView(
             // ignore: prefer_const_literals_to_create_immutables
-            children: [const ProductSection()],
+            children: [
+              const ProductSection(),
+              const SizedBox(height: 1),
+              const AboutTheLotSection(),
+            ],
           ),
         ),
       ),

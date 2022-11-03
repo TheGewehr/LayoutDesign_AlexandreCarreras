@@ -27,6 +27,7 @@ class InfoSection extends StatelessWidget {
               ),
             ),
           ),
+          SizedBox(height: 3),
           Align(
             alignment: Alignment.centerLeft,
             child: Padding(
@@ -40,6 +41,7 @@ class InfoSection extends StatelessWidget {
               ),
             ),
           ),
+          SizedBox(height: 15),
           Align(
             alignment: Alignment.centerLeft,
             child: Padding(
@@ -53,6 +55,7 @@ class InfoSection extends StatelessWidget {
               ),
             ),
           ),
+          SizedBox(height: 15),
           Align(
             alignment: Alignment.centerLeft,
             child: Padding(
@@ -60,6 +63,7 @@ class InfoSection extends StatelessWidget {
               child: SaleSpecifics(),
             ),
           ),
+          SizedBox(height: 4),
           Align(
             alignment: Alignment.centerLeft,
             child: Padding(
@@ -105,6 +109,7 @@ class SaleSpecifics extends StatelessWidget {
     );
   }
 }
+
 //Align(
 //            alignment: Alignment.centerLeft,
 //            child: Padding(
@@ -132,7 +137,7 @@ class SaleSpecifics extends StatelessWidget {
 //                "20% sale!",
 //                style: TextStyle(
 //                    //fontSize: 30,
-//                    
+//
 //                    color: Color.fromARGB(255, 36, 190, 82),),
 //              ),
 //                ],

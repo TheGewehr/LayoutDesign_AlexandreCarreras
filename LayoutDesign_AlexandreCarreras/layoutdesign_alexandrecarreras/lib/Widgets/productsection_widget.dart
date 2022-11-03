@@ -9,7 +9,7 @@ class ProductSection extends StatelessWidget {
   @override
   Widget build(context) {
     return Container(
-      height: 500,
+      height: 480,
       decoration: const BoxDecoration(
         color: Color.fromARGB(
             255, 36, 36, 36), // Color.fromARGB(255, 201, 72, 184)
