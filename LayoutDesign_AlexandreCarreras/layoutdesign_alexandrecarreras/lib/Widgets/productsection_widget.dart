@@ -15,16 +15,15 @@ class ProductSection extends StatelessWidget {
             255, 36, 36, 36), // Color.fromARGB(255, 201, 72, 184)
       ),
       child: Stack(
+        alignment: Alignment.topCenter,
         children: [
-          const Padding(
-            //alignment: Alignment.bottomRight,
-            padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
-            child: ProductImage(),
-          ),
-          const Padding(
-            //alignment: Alignment.bottomRight,
-            padding: EdgeInsets.fromLTRB(0, 300, 0, 0),
-            child: InfoSection(),
+          Column(
+            mainAxisSize: MainAxisSize.max,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Center(child: const ProductImage()),
+              const InfoSection(),
+            ],
           ),
           Padding(
             //alignment: Alignment.bottomRight,

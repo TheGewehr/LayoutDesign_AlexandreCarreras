@@ -43,9 +43,9 @@ class MyApp extends StatelessWidget {
           child: ListView(
             // ignore: prefer_const_literals_to_create_immutables
             children: [
-              const ProductSection(),
+              const Expanded(child: const ProductSection(),),
               const SizedBox(height: 1),
-              const AboutTheLotSection(),
+              const Expanded(child: const AboutTheLotSection(),)
             ],
           ),
         ),

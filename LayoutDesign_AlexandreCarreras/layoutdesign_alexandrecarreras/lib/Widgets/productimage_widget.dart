@@ -11,16 +11,15 @@ class ProductImage extends StatelessWidget {
     return Container(
       height: 300,
       decoration: const BoxDecoration(
-        color:
-            Color.fromARGB(255, 49, 0, 51), // Color.fromARGB(255, 201, 72, 184)
+        color: Color.fromARGB(255, 61, 61, 61), // Color.fromARGB(255, 201, 72, 184)
       ),
       child: Stack(
         children: [
           Image.asset(
             'assets/AdrianHelmet01.png',
-            fit: BoxFit.cover,
-            width: 500,
-            height: 500,
+            fit: BoxFit.contain,
+            width: 5000,
+            height: 5000,
           ), 
 
           const Padding(
