@@ -7,7 +7,6 @@ class InfoSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    //final product = context.watch<Product>();
     return Padding(
       padding: const EdgeInsets.only(left: 15, right: 10, top: 15),
       child: Column(
@@ -70,10 +69,7 @@ class InfoSection extends StatelessWidget {
               padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
               child: Text(
                 "Until friday, 27th of January",
-                style: TextStyle(
-                    //fontSize: 30,
-                    //fontWeight: FontWeight.bold,
-                    color: Colors.grey),
+                style: TextStyle(color: Colors.grey),
               ),
             ),
           ),

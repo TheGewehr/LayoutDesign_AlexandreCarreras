@@ -16,14 +16,12 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         backgroundColor: const Color.fromARGB(255, 74, 74, 74),
-        appBar: AppBar // Appbar Stuff
-            (
+        appBar: AppBar(
           backgroundColor: const Color.fromARGB(255, 49, 49, 49),
           actions: <Widget>[
             Row(
@@ -60,29 +58,29 @@ class MyApp extends StatelessWidget {
               const Expanded(
                 child: DescriptionSection(),
               ),
-               const SizedBox(
+              const SizedBox(
                 height: 1,
               ),
               const Expanded(
-                child: Tab_widget(tabtext: "Questions and Answers"),
+                child: ProductTab(tabtext: "Questions and Answers"),
               ),
               const SizedBox(
                 height: 1,
               ),
               const Expanded(
-                child: Tab_widget(tabtext: "Paiment and Shipping conditions"),
+                child: ProductTab(tabtext: "Paiment and Shipping conditions"),
               ),
               const SizedBox(
                 height: 1,
               ),
               const Expanded(
-                child: Tab_widget(tabtext: "Other lots from the same seller"),
+                child: ProductTab(tabtext: "Other lots from the same seller"),
               ),
               const SizedBox(
                 height: 1,
               ),
               const Expanded(
-                child: Tab_widget(tabtext: "See all the lots in this section"),
+                child: ProductTab(tabtext: "See all the lots in this section"),
               ),
             ],
           ),

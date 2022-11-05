@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 
-// ignore: camel_case_types
-class Tab_widget extends StatelessWidget {
-  const Tab_widget({Key? key, required this.tabtext}) : super(key: key);
+class ProductTab extends StatelessWidget {
+  const ProductTab({Key? key, required this.tabtext}) : super(key: key);
 
   final String tabtext;
 

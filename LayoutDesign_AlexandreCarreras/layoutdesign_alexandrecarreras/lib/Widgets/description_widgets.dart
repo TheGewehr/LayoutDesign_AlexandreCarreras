@@ -8,8 +8,7 @@ class DescriptionSection extends StatelessWidget {
     return Container(
       height: 200,
       decoration: const BoxDecoration(
-        color: Color.fromARGB(
-            255, 36, 36, 36), // Color.fromARGB(255, 201, 72, 184)
+        color: Color.fromARGB(255, 36, 36, 36),
       ),
       child: Stack(
         alignment: Alignment.topCenter,

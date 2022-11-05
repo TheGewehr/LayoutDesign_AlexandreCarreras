@@ -8,8 +8,7 @@ class AboutTheLotSection extends StatelessWidget {
     return Container(
       height: 180,
       decoration: const BoxDecoration(
-        color: Color.fromARGB(
-            255, 36, 36, 36), // Color.fromARGB(255, 201, 72, 184)
+        color: Color.fromARGB(255, 36, 36, 36),
       ),
       child: Column(
         children: const [

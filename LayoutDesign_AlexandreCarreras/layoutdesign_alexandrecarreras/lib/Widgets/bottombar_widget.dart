@@ -12,7 +12,6 @@ class BottomBar extends StatelessWidget {
       color: Color.fromARGB(255, 49, 49, 49),
       child: SizedBox(
         height: 52,
-        //width: MediaQuery.of(context).size.width,
         child: Center(child: AddToTheCart()),
       ),
     );
