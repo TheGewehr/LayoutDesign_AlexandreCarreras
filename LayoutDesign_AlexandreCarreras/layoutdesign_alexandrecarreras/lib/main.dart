@@ -7,6 +7,7 @@ import 'Widgets/productsection_widget.dart';
 import 'Widgets/appbarbuttons_widgets.dart';
 import 'Widgets/moredetails_widget.dart';
 import 'Widgets/description_widgets.dart';
+import 'Widgets/tab_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -58,6 +59,30 @@ class MyApp extends StatelessWidget {
               ),
               const Expanded(
                 child: DescriptionSection(),
+              ),
+               const SizedBox(
+                height: 1,
+              ),
+              const Expanded(
+                child: Tab_widget(tabtext: "Questions and Answers"),
+              ),
+              const SizedBox(
+                height: 1,
+              ),
+              const Expanded(
+                child: Tab_widget(tabtext: "Paiment and Shipping conditions"),
+              ),
+              const SizedBox(
+                height: 1,
+              ),
+              const Expanded(
+                child: Tab_widget(tabtext: "Other lots from the same seller"),
+              ),
+              const SizedBox(
+                height: 1,
+              ),
+              const Expanded(
+                child: Tab_widget(tabtext: "See all the lots in this section"),
               ),
             ],
           ),
