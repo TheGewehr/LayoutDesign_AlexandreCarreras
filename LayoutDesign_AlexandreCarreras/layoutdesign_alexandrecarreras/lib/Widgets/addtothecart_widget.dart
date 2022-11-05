@@ -9,6 +9,7 @@ class AddToTheCart extends StatelessWidget {
   Widget build(context) {
     return Container(
       height: 40,
+      width: 370,
       decoration: const BoxDecoration(
         color: Color.fromARGB(255, 201, 72, 184),
         borderRadius: BorderRadius.all(Radius.circular(50)),

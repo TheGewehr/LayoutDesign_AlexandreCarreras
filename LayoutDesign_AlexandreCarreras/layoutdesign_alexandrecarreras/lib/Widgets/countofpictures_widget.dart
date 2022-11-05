@@ -3,8 +3,6 @@ import 'package:flutter/material.dart';
 class CountOfPictures extends StatelessWidget {
   const CountOfPictures({Key? key}) : super(key: key);
 
-  static const double padding = 6;
-
   @override
   Widget build(context) {
     return Container(
@@ -14,7 +12,7 @@ class CountOfPictures extends StatelessWidget {
         color: Color.fromARGB(255, 202, 202, 202),
         borderRadius: BorderRadius.all(Radius.circular(5)),
       ),
-      padding: const EdgeInsets.all(padding),
+      padding: const EdgeInsets.all(4),
       child: const Center(
         child: Text(
           "1 of 11",

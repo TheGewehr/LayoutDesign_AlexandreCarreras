@@ -6,6 +6,7 @@ import 'Widgets/bottombar_widget.dart';
 import 'Widgets/productsection_widget.dart';
 import 'Widgets/appbarbuttons_widgets.dart';
 import 'Widgets/moredetails_widget.dart';
+import 'Widgets/description_widgets.dart';
 
 void main() {
   runApp(const MyApp());
@@ -43,9 +44,21 @@ class MyApp extends StatelessWidget {
           child: ListView(
             // ignore: prefer_const_literals_to_create_immutables
             children: [
-              const Expanded(child: const ProductSection(),),
-              const SizedBox(height: 1),
-              const Expanded(child: const AboutTheLotSection(),)
+              const Expanded(
+                child: ProductSection(),
+              ),
+              const SizedBox(
+                height: 1,
+              ),
+              const Expanded(
+                child: AboutTheLotSection(),
+              ),
+              const SizedBox(
+                height: 1,
+              ),
+              const Expanded(
+                child: DescriptionSection(),
+              ),
             ],
           ),
         ),

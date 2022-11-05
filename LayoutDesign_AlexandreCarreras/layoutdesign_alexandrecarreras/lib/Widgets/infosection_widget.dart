@@ -109,36 +109,3 @@ class SaleSpecifics extends StatelessWidget {
     );
   }
 }
-
-//Align(
-//            alignment: Alignment.centerLeft,
-//            child: Padding(
-//              padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
-//              child: Text(
-//                "French helmet from the first world war. It is an extremely rare piece that was created to provide french soldiers more protection during ennemy assaults.",
-//                style: TextStyle(
-//                  color: Colors.grey,
-//                  height: 1.0,
-//                ),
-//              ),
-//            ),
-//          ),
-
-//Row(
-//                children: [
-//                  Text(
-//                "800,00 €",
-//                style: TextStyle(
-//                    //fontSize: 30,
-//                    decoration: TextDecoration.lineThrough,
-//                    color: Colors.grey),
-//              ),
-//               Text(
-//                "20% sale!",
-//                style: TextStyle(
-//                    //fontSize: 30,
-//
-//                    color: Color.fromARGB(255, 36, 190, 82),),
-//              ),
-//                ],
-//              )

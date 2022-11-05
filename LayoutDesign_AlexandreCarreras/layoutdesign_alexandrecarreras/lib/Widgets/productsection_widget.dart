@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'infosection_widget.dart';
 import 'likebutton_widget.dart';
 import 'productimage_widget.dart';
+import 'countofpictures_widget.dart';
 
 class ProductSection extends StatelessWidget {
   const ProductSection({Key? key}) : super(key: key);
@@ -20,15 +21,19 @@ class ProductSection extends StatelessWidget {
           Column(
             mainAxisSize: MainAxisSize.max,
             crossAxisAlignment: CrossAxisAlignment.start,
+            // ignore: prefer_const_literals_to_create_immutables
             children: [
-              Center(child: const ProductImage()),
+              const Center(child: ProductImage()),
               const InfoSection(),
             ],
           ),
-          Padding(
-            //alignment: Alignment.bottomRight,
-            padding: const EdgeInsets.fromLTRB(318, 273, 0, 0),
+          const Padding(
+            padding: EdgeInsets.fromLTRB(318, 273, 0, 0),
             child: LikeWidget(),
+          ),
+          const Padding(
+            padding: EdgeInsets.fromLTRB(318, 5, 0, 0),
+            child: CountOfPictures(),
           ),
         ],
       ),
